@@ -76,25 +76,25 @@ function App() {
               <div style={{ display: 'flex' }}>
                 <pre>
 
-                  <h7>Name:</h7>
-                  <br />
+                  <h6>Name:</h6>
+                 
 
 
                   {emp.name}
                 <br />
 
-                  <h7>Mobile No.: </h7>
-                  <br />
+                  <h6>Mobile No.: </h6>
+                  
 
                   {emp.mobile
                   }
-                </pre>
+                  <br />
+                <h6>Email ID: </h6>      
 
-
+              {emp.email}  
+              
+              </pre>
               </div>
-
-              <h7>Email ID: </h7>
-              {emp.email}
               <button className="btn waves-effect waves-light" onClick={(e) => deleteEmployee(e, ind)} name="action">Delete</button>
             </div>
 
